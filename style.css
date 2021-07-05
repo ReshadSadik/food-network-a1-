@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    text-transform: capitalize;
+     color: rgb(83, 83, 83);
+}
+.h-width{
+    width: 50%;
+}
+
+/* nav */
+.nav{
+    height: 50px;
+    background: #19323C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.nav .h-space span{
+color: tomato;
+}
+.nav .logo{
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav .logo img{
+    width: 20px;
+}
+.nav h2{
+
+    position: relative;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: #252839;
+    /* -webkit-text-stroke: 0.3vw #383d52; */
+
+}
+.nav h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: whitesmoke;
+    -webkit-text-stroke: #383d52;
+    border-right: 4px solid #F98110;
+    overflow: hidden;
+    animation: reveal 6s linear infinite;
+}
+
+@keyframes reveal {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    30%,80%
+    {
+        width: 30%;
+    }
+}
+/* hader style */
+
+.container{
+
+    width: 90%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90vh;
+}
+.header .header-title,.header-img{
+    padding-left: 20px;
+}
+.header .header-title h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: rgb(83, 83, 83);
+
+}
+.header .header-title span{
+    color: tomato;
+}
+.header .header-title p{
+    color: gray;
+    line-height: 25px;
+    margin: 40px 0;
+    width: 60%;
+}
+
+.header-img{
+
+}
+.header-img img{
+width: 70%;
+animation: pop 5s linear infinite;
+}
+@keyframes pop {
+    0%,10%,90%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+}
+
+
+/* btn style */
+
+.btn{
+  border: 1px solid tomato;
+  border-radius: 5px;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1{
+    background: tomato;
+}
+.btn3 a{
+  color: #fff;
+}
+.btn1 a{
+  color: #fff;
+}
+.btn3:hover a{
+  color: black;
+}
+.btn1:hover a{
+  color: black;
+}
+.btn1:hover{
+    background: white;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: tomato;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn3::before{
+  height: 180%;
+}
+.btn3:hover::before{
+  height: 0%;
+}
+/* button style end */
+
+/* banner area */
+.banner{
+    background-image: url(./images/shapes/Frame\ 59.jpg);
+    margin: 0;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    
+}
+.banner .banner-img{
+    text-align: center;
+}
+.banner .banner-img img {
+    margin-top: 80px;
+    width: 30%;
+}
+.banner .banner-title{
+margin-top: 80px ;
+}
+.banner .banner-title p{
+    width: 60%;
+    line-height: 25px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 50px;
+}
+.banner-title h1{
+    font-size: 2.5rem;
+    margin: 40px 0 ;
+}
+
+/* recipie-items start */
+.recipies{
+    margin-top: 100px;
+}
+.recipies .recipie-title h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.recipies .recipie-title p{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 70px ;
+}
+.recipie-items{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 200px;
+}
+.recipie-items .single-recipie{
+    margin: 0 30px;
+border-radius: 20px;
+box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.18);
+
+}
+.recipie-items .single-recipie .single-recipie-inner{
+    padding: 20px;
+    width: 290px
+}
+.single-recipie img{
+    margin-bottom: 20px;
+width: 100%;
+transition: 0.3s;
+}
+.single-recipie:hover img{
+    transform: scale(1.05);
+    
+}
+
+
+.recipies h3{
+    margin: 20px 0 ;
+    text-align: center;
+    color: tomato;
+}
+.recipies p{
+    line-height: 30px;
+    text-align: center;
+    color: gray;
+}
+
+/* footer */
+footer{
+    background: #19323C;
+    text-align: center;
+    padding: 40px 20px 100px 20px;
+}
+footer h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+footer p{
+    margin: 25px 0;
+    color: rgba(245, 245, 245, 0.664);
+}
+footer span{
+    color: tomato;
+}
