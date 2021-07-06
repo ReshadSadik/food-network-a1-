@@ -244,8 +244,8 @@ box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.18);
 
 }
 .recipie-items .single-recipie .single-recipie-inner{
-    padding: 20px;
-    width: 290px
+    padding: 25px;
+    width: 290px;
 }
 .single-recipie img{
     margin-bottom: 20px;
@@ -265,7 +265,7 @@ transition: 0.3s;
 }
 .recipies p{
     line-height: 30px;
-    
+    font-size: 14px;
     color: gray;
 }
 .menu{
