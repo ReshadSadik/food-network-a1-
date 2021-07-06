@@ -115,10 +115,16 @@ color: tomato;
 }
 
 .header-img{
+    background-image: url(./images/shapes/Group\ 8450.png);
+    background-position: left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 
 }
 .header-img img{
-width: 70%;
+width: 50%;
+
 animation: pop 5s linear infinite;
 }
 @keyframes pop {
