@@ -272,14 +272,34 @@ transition: 0.3s;
     display: flex;
 }
 .menu{
-    background-image: url(./images/menu.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
+display: flex;
+align-items: center;
+margin: 0 auto;
+
 
 
 }
+.menu-img{
+    width: 60%;
+}
+.menu-img img{
+    width: 100%;
+    margin: 0;
+}
+.menu .order-box{
+    
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    background: rgba(247, 111, 33, 0.87);
+    width: 40%;
+}
+.order-box h2{
+    color: white;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
 
 /* footer */
 footer{
